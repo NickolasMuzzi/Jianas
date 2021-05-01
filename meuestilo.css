@@ -1,0 +1,180 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Lato', sans-serif;
+
+}
+ html{
+	height: 100%;
+}
+body{
+	min-height: 100%;
+	display: flex;
+	flex-direction: column;
+}
+.cabecalho
+{
+	width: 100%;
+	height: 80px;
+	background-color: #a6bbcc;
+	margin: 0px:;
+	padding-top: 0px;
+    padding-right: 0px;
+    padding-bottom: 0px;
+    padding-left: 0px;
+
+
+
+
+}
+.logocabecalho{
+	
+	display:flex;
+	position: relative;
+	padding:5px 5px 5px 5px;
+	padding-left: 20px;
+
+}
+.menu{
+	background:#a6bbcc;
+	text-align: center;
+}
+.menu ul li, 
+.menu ul{
+	margin:0;
+	padding:0;
+	list-style:none;
+}
+.menu ul li{
+	display:inline-block;
+	}
+.menu ul li a{
+	display:block;
+	color:#fff;
+	padding:13px 20px;
+	font-size: 20px;
+	text-decoration: none;
+}
+
+.menu li {
+	position:relative; 
+	line-height:auto;
+	padding:0 10px;
+	margin-right:30px;
+	font-family: 'Lato', sans-serif;
+
+}
+.menu li .colunas {
+	position:absolute; 
+	left:-9999px; 
+	padding:10px 4px 10px 20px;
+	border-top:none;
+	background:#a6bbcc;
+	width: 500px;
+}
+.menu li:hover .colunas{
+	left:0;
+}
+.menu li ul.col{
+	display:inline;
+	float: left;
+	position: relative;
+	padding:0;
+	margin:0 0 12px 0;
+	width:33.33%;
+}
+.menu li ul.col li {
+	margin:0 0 0px 0;
+	padding:2px 6px;
+	width:85%;
+	list-style-type:none;
+	font-size:12px;
+	height:85%;
+	position:relative;
+	float:none;
+}
+.menu li .col li:hover {
+	padding:2px 6px;
+	margin:0 0 10px 0;
+	background: #b4c4d4;
+	
+}
+.menu li .col span{
+	font-size:12px;
+	color:#fff;
+	font-weight:bold;
+}
+.menu li .col li a{
+	font-size:12px;
+	color:#fff;
+}
+.pesquisa{
+	text-align: center;
+	position: relative;
+	top: -100px;
+}
+#inputBarraBusca{
+	width: 500px;
+	height: 35px;
+	border-radius: 0.2em;
+	border:none;
+	outline: none;
+}
+#inputBotaoPesquisar{
+	height: 35px;
+	width: 35px;
+	cursor: pointer;
+	border-radius: 0.2em;
+	border:none;
+	color: black;
+	
+
+}
+.carrinho{
+	font-size: 20px;
+	display: flex;
+	position: relative;
+	left: 1200px;
+	top: -75px;
+}
+.logado{
+	
+	font-size: 20px;
+	display: flex;
+	position: relative;
+	left: 1200px;
+	top: -90px;
+}
+.logado p{
+	font-size: 20px;
+	display: flex;
+	position: relative;
+	margin-left: 1400px; 
+	font-weight:bold; 
+	margin-top:-65px;
+}
+
+.footer{
+	margin-top: auto;
+	height: 80px;
+	background-color: #a6bbcc;
+	color: #fff;
+	align-items: center;
+	
+}
+.footer ul li,
+.footer ul{
+	margin-top: 5px;
+	list-style:none;
+}
+.footer ul li{
+display:inline-block;
+padding: 0 35px;
+}
+.footer ul li a{
+	display:block;
+	color: #fff;
+	padding:0px;
+	text-decoration: none;
+}

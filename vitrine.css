@@ -1,0 +1,20 @@
+.vitrine{
+	width: 30;
+	height: 30;
+
+}
+.footer ul li,
+.footer ul{
+	margin-top: 5px;
+	list-style:none;
+}
+.footer ul li{
+display:inline-block;
+padding: 0 20px;
+}
+.footer ul li a{
+	display:block;
+	color: #fff;
+	padding:0px;
+	text-decoration: none;
+}

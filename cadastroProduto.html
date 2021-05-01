@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html>
+<head>
+		<meta charset="utf-8"/>
+	<title>Cadastro de produto</title>
+	<link rel="stylesheet" type="text/css" href="cadastroProduto.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+</head>
+<body>
+	<header>
+	<div class="cabecalho">
+			<div class="logocabecalho"><img src="LOGO.jpg" width="220" height="120"></div>	
+			<div class="pesquisa">
+					<form action="pesquisar.php" method="get">
+					<input id="inputBarraBusca" name="pesquisar" type="text" placeholder=" Buscar..." />
+					<button id="inputBotaoPesquisar" type="submit"><i class="fa fa-search"></i></button>
+					</form>
+			</div>
+			<div class="carrinho"><i class="fa fa-shopping-cart"><a href="#"> Carrinho</a></i></div>
+			</div>
+		</header>
+		
+		<div class="menu">
+	<ul>
+	<li> <a href="index.php">Início</a> </li>
+	<li> <a href="#" class="drop">Categoria</a> 
+		<div class="colunas">
+			<ul class="col">
+				<span>Outros:</span>
+			<li><a href="">Caixas de som</a></li>
+			<li><a href="">Telefones e Interfones</a></li>
+			<li><a href="">Televisores</a></li>
+			<li><a href="">Fones de ouvido</a></li>
+			<li><a href="">Usados</a></li>
+			</ul>
+			<ul class="col" >
+				<span>Computadores:</span>
+			<li><a href="">Desktops</a></li>
+			<li><a href="">Notebooks</a></li>
+			<li><a href="">Placa de vídeo</a></li>
+			<li><a href="">Placa de som</a></li>
+			<li><a href="">Processador</a></li>
+			<li><a href="">Memória RAM</a></li>
+			<li><a href="">Cooler</a></li>
+			<li><a href="">Cabos e adaptadores</a></li>
+			<li><a href="">Webcam</a></li>
+			<li><a href="">Fontes</a></li>
+			<li><a href="">Pc's Gamer</a></li>
+		</ul>
+		<ul class="col">
+			<span>Celulares:</span>
+			<li><a href="">Smartphones</a></li>
+			<li><a href="">Carregador</a></li>
+			<li><a href="">Cabos</a></li>
+			<li><a href="">Tela</a></li>
+			<li><a href="">Display</a></li>
+		</ul>
+		</div>
+	</li>
+	<li> <a href="quemSomos.html">Quem somos</a> </li>
+	<li> <a href="suporte.html">Contato</a> </li>
+	<li> <a href="cadastrousuario.html">Criar conta</a> </li>
+	<li> <a href="login.html">Entrar</a> </li>
+	<li> <a href="cadastroProduto.html">Vender</a> </li>
+	</ul> 
+		</div>
+
+
+
+<div class="container">
+<form method="post" enctype="multipart/form-data" action="CadastroProduto.php" class="form">
+	<h1 align="center">Cadastro de produto</h1>
+	<label>Nome do produto:</label> 
+	<input type="text" name="nomedoproduto" required>
+	<br>
+	<label>Imagens:</label> 
+    <input type="file" name="imagem">
+	<br>
+	<label>Descrição:</label> 
+	<input type="text" name="descricao" required>
+	<br>
+	<p>Localização:</p><br>
+	<label>Estado:</label> 
+	<select name="estadosp" required>
+        <option></option>
+        <option value="AC">Acre</option>
+        <option value="AL">Alagoas</option>
+        <option value="AP">Amapá</option>
+        <option value="AM">Amazonas</option>
+        <option value="BA">Bahia</option>
+        <option value="CE">Ceará</option>
+        <option value="DF">Distrito Federal</option>
+        <option value="ES">Espírito Santo</option>
+        <option value="GO">Goiás</option>
+        <option value="MA">Maranhão</option>
+        <option value="MT">Mato Grosso</option>
+        <option value="MS">Mato Grosso do Sul</option>
+        <option value="MG">Minas Gerais</option>
+        <option value="PA">Pará</option>
+        <option value="PB">Paraíba</option>
+        <option value="PR">Paraná</option>
+        <option value="PE">Pernambuco</option>
+        <option value="PI">Piauí</option>
+        <option value="RJ">Rio de Janeiro</option>
+        <option value="RN">Rio Grande do Norte</option>
+        <option value="RS">Rio Grande do Sul</option>
+        <option value="RO">Rondônia</option>
+        <option value="RR">Roraima</option>
+        <option value="SC">Santa Catarina</option>
+        <option value="SP">São Paulo</option>
+        <option value="SE">Sergipe</option>
+        <option value="TO">Tocantins</option>
+    </select>
+	<br>
+
+	<label>Cidade:</label> 
+	<input type="text" name="cidadep" required>
+	<br>
+	
+	<label>Categoria:</label> 
+	<select name="categoriap" required>
+		<option></option>
+		<option value="Eletrônicos">Eletrônicos(Equipamentos de áudio, televisores, monitores, etc.),</option>
+		<option value="Celulares">Celulares(Smartphones Usados ou Novos)</option>
+		<option value="Hardware">Hardware(Peças de computador, Celulares ou qualquer tipo de eletronico)</option>
+		<option value="Acessórios">Acessórios(Mouses, Teclados, Mousepads etc)</option>
+
+	</select>
+	<br>
+	
+	<label> Usado ou Novo:</label>
+		<INPUT TYPE="radio" NAME="opcao" VALUE="Usado" >Usado
+		<br>
+		<INPUT TYPE="radio" NAME="opcao" VALUE="Novo"> Novo
+		<br>
+	
+
+	<label>Preço:</label> 
+	<input type="text" name="preco" required>
+	<br>
+	
+	<p>Contatos:</p><br>
+	<label><i class="fa fa-facebook-square"></i> Facebook:</label> 
+	<input type="text" name="face">
+	<br>
+	<label><i class="fa fa-twitter"></i> Twitter:</label> 
+	<input type="text" name="twitter">
+	<br>
+	<label><i class="fa fa-instagram"></i> Instagram:</label>
+	<input type="text" name="insta">
+	<br>
+	<label><i class="fa fa-whatsapp"></i> Whatsapp:</label>
+	<input type="text" name="whats">
+	<br>
+	<label><i class="fa fa-phone"></i> Telefone:</label>
+	<input type="text" name="telefone" maxlength="11" required>
+	<br>
+	<input type="submit" name="Enviar">
+</form>
+</div>
+<footer class="footer">
+		
+			<div class="">
+				<ul>
+					<li><p><a href="termosUso.html">Termos de Uso e Condições</a></p>
+					<p><a href="suporte.html">Fale Conosco</a></p></li>
+					<li><h3>A empresa</h3>
+					<p>Empresa que busca trazer o melhor para você, sem precisar sair de casa.<br>
+					  Sempre em busca de melhorar nosso seriviços e satisfazer nossos clientes.</p>
+					</li>
+					<li><h3>Endereço</h3>
+						<p>Rodovia MGC 262, Bairro Sobradinho, Sabará, Minas Gerais,<br> CEP, 34590-390</p>
+					</li>
+
+				</ul>
+			</div>
+
+		</footer>
+
+</body>
+</html>
